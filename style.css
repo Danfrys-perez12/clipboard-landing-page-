@@ -1,0 +1,422 @@
+:root{
+
+	/*Colores*/
+	/*Primary*/
+	--strongCyan: hsl(171, 66%, 44%);
+	--LightBlue: hsl(233, 100%, 69%);
+	/*### Neutral*/
+	--DarkGrayishBlue: hsl(210, 10%, 33%);
+	--GrayishBlue: hsl(201, 11%, 66%);
+	--grisclaro: hsl(192, 15%, 96%);
+
+	/* Typography*/
+
+	/*### Body Copy*/
+	--Fontsize: font-size: 18px;
+
+	/*### Fonts*/
+	--Family: 'Bai Jamjuree';
+}
+html{
+	font-size: 62.5%; /* 1 rem = 10px */    
+	overflow: auto;
+	box-sizing: border-box;
+}
+body{
+	font-family: var(--Family);
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+	h1, h2,h3{
+		color: var(--DarkGrayishBlue);
+		letter-spacing: .1rem;
+	}
+h1, h2{
+	margin-bottom: -1rem ;
+}
+h1{
+	font-size: 4rem;
+	text-align: center;
+}
+h2{
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 2rem;
+	
+}
+h3{
+	font-size: 2rem;
+}
+.parrafo-cabezera{
+	width: 65%;
+	margin: 3rem auto 4rem auto;
+	
+}
+.parrafo{
+	color: var(--GrayishBlue);
+	font-size: 1.8rem;
+	text-align: center;
+	line-height: 1.5;
+}
+.parrafo-principal{
+	max-width: 53%;
+	margin: 0 auto;
+}
+.parrafo-descripcion{
+	font-size: 1.5rem;
+	line-height: 1.5;
+	color: var(--GrayishBlue);
+	width: 49%;
+	
+}
+.parrafo-seccion{
+	font-size: 1.5rem;
+	line-height: 1.8;
+	color: var(--GrayishBlue);
+}
+header{
+	background-image: url(images/bg-header-desktop.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 60rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 8rem;
+
+}
+.principal-h2-p
+
+  .tres-divice, .cuatro-h2-p, .cinco-h2-p{
+	max-width: 100% ;
+	margin-bottom: 10rem;
+}
+
+.botones{
+	display: flex;
+	gap: 1.5rem;
+	justify-content: center;
+}
+.botones input{
+	border: none;
+	border-bottom: 3px solid;
+	height: 5rem;
+	width: 20rem;
+	color: #fff;
+	font-size: 1.7rem;
+	border-radius: 3rem;
+	cursor: pointer;
+	
+}
+.botones input:nth-child(1){
+	background-color: var(--strongCyan);
+	border-color: hsl(171, 69%, 28%); 
+}
+.botones input:nth-child(2){
+	background-color: var(--LightBlue);
+	border-color: hsl(233, 64%, 53%); 
+}
+
+.contenedor-principal{
+	margin-bottom: 15rem;
+}
+
+
+												/**Contenedor segundo**/
+
+.contenedor-segundo{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	gap: 10rem;
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+	max-width: 100%;
+}
+.img-c{
+	max-width: 100%;
+}
+.contenedor-descripcion{
+	padding-top: 3rem;
+}
+.descripcion-computer{
+	width: 100%;
+	margin-bottom: 5rem;
+}
+												/**Contenedor segundo**/
+
+.contenedor-tres{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 10rem;
+	max-width: 100%;
+	max-height: 100%;
+	margin-bottom: 10rem;
+}
+.img-3{
+	margin-left: 20rem;
+}
+.parrafo-tres{
+	width: 50%;
+	margin-left: 35rem;
+	
+}
+
+												/*contenedor cuantro*/
+
+.cuatro{
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	margin-top: 12rem;
+	margin-bottom: 15rem;
+	max-width: 100%;
+	gap: 3rem;
+	
+}
+.section-uno{
+	max-width: 25%;
+	text-align: center;
+	
+}
+.ico-section{
+	margin-bottom: 3rem;
+}
+.imagenes-cuatro{
+	display: flex;
+	justify-content: center;
+	gap: 12rem;
+	margin-bottom: 15rem;
+}
+.imagenes-cuatro img{
+	max-width: 100%;
+	height: 100%;
+}
+.parrafo-5{
+	width: 50%;
+	margin:0 auto;
+}
+.cinco-h2-p{
+	margin-bottom: 6rem;
+}
+
+
+																/**Footer**/
+
+footer{
+	display: grid;
+	grid-template-columns: 15% 85%;
+	background-color: var(--grisclaro);
+	height: 15rem;
+	overflow: hidden;
+	padding: 0 10rem 0 5rem;
+}
+.logo-footer{
+	max-width: 50px;
+	max-height: 50px;
+	margin: 6rem auto;
+}
+.nav-footer{
+	display: grid;
+	grid-template-columns: 20% 20% 20% 40%;
+	
+
+}
+a {
+	text-decoration: none;
+	color: var(--DarkGrayishBlue);
+	font-size: 1.7rem;
+	font-weight: 500;
+}
+
+a:hover{
+	color: var(--strongCyan);
+	transition: 1s;
+	cursor: pointer;
+	
+}
+.iconos img:hover{
+	cursor: pointer;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+	
+}
+li{
+	margin-top: 2rem;
+}
+.navegacion{
+	margin-top: 4rem;
+	margin-left: 8rem;
+}
+.iconos{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 2rem;
+	max-width: 3%;
+	align-items: center;
+	margin-left: 20rem;
+	
+}
+
+														/**Media query**/
+
+@media (max-width: 768px) {
+	
+	header, main{
+		padding: 1rem;
+		
+	}
+	.contenedor-principal{
+		margin-bottom: -15rem;
+	}
+
+	.logo-header{
+		margin-top: 40rem;
+		margin-bottom: 2rem;
+		width: 10rem;
+		height: 10rem;
+	}
+	h1{
+		line-height: 1.3;
+		font-size: 3.2rem;
+	}
+	.parrafo{
+		font-size: 1.6rem;
+	}
+	.parrafo-cabezera{
+		width: 90%;
+	}
+	
+	.botones{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding-left: 3rem;
+		padding-right: 3rem;
+		margin-bottom: 30rem;
+
+	}
+	.botones input{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	h1 h2{
+		letter-spacing: 0;
+	}
+	
+	h2{
+		font-size: 3rem;
+	}
+
+	.principal-h2-p{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.parrafo-principal{
+		max-width: 90%;
+	}
+	.contenedor-segundo{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.img-c{
+		padding-left: 1rem;
+        padding-right: 1rem;
+		
+	}
+	.descripcion-computer{
+		text-align: center;
+	}
+	.parrafo-descripcion{
+		width: 85%;
+		margin: 0 auto;
+	}
+
+
+
+	.contenedor-tres{
+	
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 5rem;
+	}
+	.parrafo-tres{
+		margin: 0 auto;
+		width: 90%;
+	}
+	.img-3{
+		margin: 0 auto;
+	}
+
+	.parrafo-4{
+		margin: 0 auto;
+	}
+	
+	.cuatro{
+		flex-direction: column;
+		margin-bottom: 10rem;
+	}
+	.section-uno{
+		max-width: 90%;
+		max-width: 100%;
+        padding: 0 2rem 0 2rem;
+		margin: 0 auto;
+	}
+
+	.imagenes-cuatro{
+		flex-direction: column;
+		gap: 8rem;
+		
+	}
+	.imagenes-cuatro img{
+		margin: 0 auto;
+	}
+	.parrafo-5{
+		width: 90%;
+	}
+
+	footer{
+		height: 100%;
+		grid-template-columns: repeat(1, 1fr);
+		padding: 0;
+	}
+	.nav-footer{
+		grid-template-columns: repeat(1, 1fr);
+		gap: 1rem;
+	}
+	.navegacion{
+		margin: 0 auto;
+		text-align: center;
+		max-width: 100%;
+	}
+	.navegacion ul{
+		padding: 0;
+		margin-top: -2rem;
+	}
+	.navegacion li{
+		
+		margin-top: 2rem;
+	}
+	
+	.logo-footer{
+		margin: 4rem auto;
+	}
+	.iconos{
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
+
+
+}
